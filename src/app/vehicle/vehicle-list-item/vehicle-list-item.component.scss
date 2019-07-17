@@ -1,0 +1,30 @@
+.vehicle {
+  width:calc(100% + 30px);
+  margin: 0 -15px;
+  .vehicle-image {
+    width:100%;
+    height:auto;
+  }
+  .vehicle-details {
+    width:100%;
+    text-align: center;
+    padding:50px 15px;
+    border-left: 1px solid #eef1f1;
+    &:first-child {
+      border-left:none;
+    }
+    h3 {
+      border-top:1px solid black;
+      border-bottom:1px solid black;
+      margin: 0 auto 50px;
+      text-align: center;
+      text-transform: uppercase;
+      display: inline;
+      font-size: 20px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  }
+}

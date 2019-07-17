@@ -1,0 +1,14 @@
+<div class="vehicle">
+  <img class="vehicle-image" [src]="'assets/'+vehicle.media[0].url" [alt]="vehicle.media[0].name" />
+  <div class="vehicle-details-error" *ngIf="error">
+    {{this.error}}
+  </div>
+  <div class="vehicle-details" *ngIf="vehicleLoaded | async">
+    <h3>{{vehicle.media[0].name}}</h3>
+    <p>From {{vehicle.price}}
+    <p>{{vehicle.description}}</p>
+  </div>
+  <div *ngIf="loading">
+    Loading Details...
+  </div>
+</div>
